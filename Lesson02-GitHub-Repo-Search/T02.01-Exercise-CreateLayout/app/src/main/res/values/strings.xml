@@ -17,4 +17,5 @@
     <string name="app_name">Github Query</string>
     <string name="et_query_hint">Enter Query and Click Search</string>
     <string name="et_tv_title">Result URL:</string>
+    <string name="search_here">Enter Search Above</string>
 </resources>
