@@ -50,13 +50,9 @@ public class MainActivity extends AppCompatActivity {
     // TODO (2) Create a method called makeGithubSearchQuery
     void makeGithubSearchQuery(){
         // TODO (3) Within this method, build the URL with the text from the EditText and set the built URL to the TextView
-        String githubSearchQuery = mSearchBoxEditText.getText().toString();
-        URL githubSearchUrl = NetworkUtils.buildUrl(githubSearchQuery);
-        //mUrlDisplayTextView.setText(githubSearchUrl.toString());
-        // TODO (6) toString() is failing - fix it
-        String Legos = githubSearchUrl.toString();
-        mUrlDisplayTextView.setText("Legos");
-        //Toast.makeText(this,githubSearchUrl.toString(),Toast.LENGTH_LONG).show();
+        String githubQuery = mSearchBoxEditText.getText().toString();
+        URL githubSearchUrl = NetworkUtils.buildUrl(githubQuery);
+        mUrlDisplayTextView.setText(githubSearchUrl.toString());
     }
 
     @Override
